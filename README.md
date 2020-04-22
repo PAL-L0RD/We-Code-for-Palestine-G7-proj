@@ -14,16 +14,22 @@ Internal for Students: help the instructors, manage classes, and activities, stu
 
 
 ## Digital Design:
+#### Main Page
 ![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig2.JPG)
 <br>
+#### Slider
 ![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig1.JPG)
 <br>
+#### Schedule
 ![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/ddd.JPG)
 <br>
+#### Messaging feature
 ![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig33.JPG)
 <br>
+#### Students' and teachers' Rooms and facilities:
 ![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig4.JPG)
 <br>
+#### Profiles
 ![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig5.JPG)
 <br>
 ![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig6.JPG)
