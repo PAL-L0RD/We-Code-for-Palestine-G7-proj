@@ -3,7 +3,7 @@ Digital Design:https://docs.google.com/presentation/d/e/2PACX-1vSyiip_eAPPzfzTqn
 <br>
 Paper Design; https://drive.google.com/open?id=1bmDX23bzaVAGd4aWTvwQbJwoWo9-PvB5
 <br>
-![IM](https://drive.google.com/open?id=1uxmgzUTHkPT2PzgHvOOTL7z_UhXs7KZL)
+![IM](https://drive.google.com/file/d/1uxmgzUTHkPT2PzgHvOOTL7z_UhXs7KZL/view?usp=sharing)
 <br>
 ![IM](https://drive.google.com/open?id=1Xxp8raWcyTmYebW4e45YRDKQxMLDrF6d)
 <br>
