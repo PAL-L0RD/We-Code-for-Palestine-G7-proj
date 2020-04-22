@@ -2,8 +2,10 @@
 
 
 ![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/CFP%20(3).jpg)
+<br?
 Our project is a project that aims to provide solid, interactive and accessible information about our program Code For Palestine(CFP). 
 The project has two chief objects, which are:
+<br>
 •	Firstly, we want to provide a website that introduces our program CFP. It will contain all of the information regarding the educational materiel, teaching level and techniques, and students’ experience. 
 It will also contain all of the information regarding admission steps, requirements and dates.
 Most importantly the website will contain a page that contains boxes showcasing the past graduation projects, these boxes can have pictures, videos and written descriptions of the projects. 
@@ -11,7 +13,7 @@ The other part of our website is dedicated only for CFP’s teachers and student
 We came with a conclusion that CFP lacks a structed and well containing website, and so we came with the idea of making one website that offers everything that students and teacher need.
 Accordingly, the website will have several features including direct files sharing and messages between teachers and students.
 Individualized calendar for each teacher and student.
-Which mean that the calendar would provide specific information about the student’s or teacher’s class or activity. Also, teacher will be able to rearrange activities for students in the way they say it better. 
+Which means that the calendar would provide specific information about the student’s or teacher’s class or activity. Also, teacher will be able to rearrange activities for students in the way they say it better. 
 The website will also include notifications to notify students if there is an ongoing//planned activity.
 The website will also offer polls and discussion pages for students and teacher to reevaluate their progress and maybe decide what movie they want to watch???
 <br>
