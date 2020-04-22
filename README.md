@@ -5,7 +5,7 @@ Digital Design:https://docs.google.com/presentation/d/e/2PACX-1vSyiip_eAPPzfzTqn
 <br>
 Paper Design; https://drive.google.com/open?id=1bmDX23bzaVAGd4aWTvwQbJwoWo9-PvB5
 <br>
-![IM1](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/1.jpg)
+![](https://raw.githubusercontent.com/theopensourcewarrior/JavaSystemMonitor/master/readme/JavaSystemMonitor.png)
 <br>
 ![IM2](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/2.jpg)
 <br>
