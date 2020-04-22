@@ -5,10 +5,10 @@ Digital Design:https://docs.google.com/presentation/d/e/2PACX-1vSyiip_eAPPzfzTqn
 <br>
 Paper Design; https://drive.google.com/open?id=1bmDX23bzaVAGd4aWTvwQbJwoWo9-PvB5
 <br>
-![IM1](images/1.jpg)
+![IM1](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/1.jpg)
 <br>
-![IM2](images/2.jpg)
+![IM2](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/2.jpg)
 <br>
-![IM3](images/3.jpg)
+![IM3](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/3.jpg)
 <br>
-![IM4](images/4.jpg)
+![IM4](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/4.jpg)
