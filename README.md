@@ -13,8 +13,21 @@ Internal for Students: help the instructors, manage classes, and activities, stu
 
 
 
-
-Digital Design:https://docs.google.com/presentation/d/e/2PACX-1vSyiip_eAPPzfzTqnPyFXeaxgt3QaD8jv4M20HpccYTUzHaVk-um3ex2WkEEeKUVH-9uBo_hmUZrK6w/pub?start=false&loop=true&delayms=3000&slide=id.g7e4be418cb_0_0
+## Digital Design:
+![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig2.JPG)
+<br>
+![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig1.JPG)
+<br>
+![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/ddd.JPG)
+<br>
+![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig33.JPG)
+<br>
+![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig4.JPG)
+<br>
+![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig5.JPG)
+<br>
+![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig6.JPG)
+<br>
 # Paper Design:
 ![IM2](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/1.jpg)
 <br>
