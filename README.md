@@ -3,10 +3,10 @@ Digital Design:https://docs.google.com/presentation/d/e/2PACX-1vSyiip_eAPPzfzTqn
 <br>
 Paper Design; https://drive.google.com/open?id=1bmDX23bzaVAGd4aWTvwQbJwoWo9-PvB5
 <br>
-![IM](https://drive.google.com/uc?id=1uxmgzUTHkPT2PzgHvOOTL7z_UhXs7KZL)
+![IM](https://files.slack.com/files-pri/T3MNZE8Q4-F01249BDFK5/20200221_135223.jpg)
 <br>
-![IM](https://drive.google.com/uc?id=1Xxp8raWcyTmYebW4e45YRDKQxMLDrF6d)
+![IM](https://files.slack.com/files-pri/T3MNZE8Q4-F011PB0A1KR/20200221_135246.jpg)
 <br>
-![IM](https://drive.google.com/uc?id=1Pr1uHcrCOWamCPJkaF0U72Nh9Ssf2yV1)
+![IM](https://files.slack.com/files-pri/T3MNZE8Q4-F012TTX4F1N/20200221_135259.jpg)
 <br>
-![IM](https://drive.google.com/uc?id=1gwqxThqky8XBC4kzyqGxyNmwXR-IeMp2)
+![IM](https://files.slack.com/files-pri/T3MNZE8Q4-F012TTX6KHN/20200221_135310.jpg)
