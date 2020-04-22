@@ -57,11 +57,4 @@ Internal for Students: help the instructors, manage classes, and activities, stu
 ![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig6.JPG)
 <br>
 
-# Paper Design
-![IM2](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/1.jpg)
-<br>
-![IM2](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/2.jpg)
-<br>
-![IM3](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/3.jpg)
-<br>
-![IM4](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/4.jpg)
+Here is the Paper Design [Paper Design ] ( https://drive.google.com/open?id=1bmDX23bzaVAGd4aWTvwQbJwoWo9-PvB5).
