@@ -15,8 +15,9 @@ Internal for Students: help the instructors, manage classes, and activities, stu
 
 ## Digital Design:
 #### Log-in page
-![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig2.JPG)
-<br>
+![LoginPage](https://github.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/blob/master/images/logInPage.png)
+
+
 #### Main Page
 ![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig1.JPG)
 <br>
