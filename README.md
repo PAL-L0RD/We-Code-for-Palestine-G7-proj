@@ -45,16 +45,17 @@ Internal for Students: help the instructors, manage classes, and activities, stu
 
 
 #### Messaging feature
-![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig4.JPG)
+![messages](https://github.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/blob/master/images/messages.png)
 
 
 #### Students' and teachers' Rooms and facilities
-![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig5.JPG)
+![rooms](https://github.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/blob/master/images/rooms.png)
 
 
 
 #### Profiles
-![](https://raw.githubusercontent.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/master/images/dig6.JPG)
-<br>
+![user profile](https://github.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/blob/master/images/userProfile.png)
 
-Here is the Paper Design [Paper Design ] ( https://drive.google.com/open?id=1bmDX23bzaVAGd4aWTvwQbJwoWo9-PvB5).
+
+
+Here is the Paper Design [Paper Design]( https://drive.google.com/open?id=1bmDX23bzaVAGd4aWTvwQbJwoWo9-PvB5).
