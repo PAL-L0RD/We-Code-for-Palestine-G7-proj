@@ -5,8 +5,8 @@ Paper Design; https://drive.google.com/open?id=1bmDX23bzaVAGd4aWTvwQbJwoWo9-PvB5
 <br>
 ![IM](https://drive.google.com/uc?id=1uxmgzUTHkPT2PzgHvOOTL7z_UhXs7KZL)
 <br>
-![IM](https://drive.google.com/uc?id==1Xxp8raWcyTmYebW4e45YRDKQxMLDrF6d)
+![IM](https://drive.google.com/uc?id=1Xxp8raWcyTmYebW4e45YRDKQxMLDrF6d)
 <br>
-![IM](https://drive.google.com/uc?id==1Pr1uHcrCOWamCPJkaF0U72Nh9Ssf2yV1)
+![IM](https://drive.google.com/uc?id=1Pr1uHcrCOWamCPJkaF0U72Nh9Ssf2yV1)
 <br>
-![IM](https://drive.google.com/uc?id==1gwqxThqky8XBC4kzyqGxyNmwXR-IeMp2)
+![IM](https://drive.google.com/uc?id=1gwqxThqky8XBC4kzyqGxyNmwXR-IeMp2)
