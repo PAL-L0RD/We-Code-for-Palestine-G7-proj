@@ -5,10 +5,10 @@ Digital Design:https://docs.google.com/presentation/d/e/2PACX-1vSyiip_eAPPzfzTqn
 <br>
 Paper Design; https://drive.google.com/open?id=1bmDX23bzaVAGd4aWTvwQbJwoWo9-PvB5
 <br>
-![IM](https://files.slack.com/files-pri/T3MNZE8Q4-F01249BDFK5/20200221_135223.jpg)
+![IM](images/1.jpg)
 <br>
-![IM]()
+![IM](images/2.jpg)
 <br>
-![IM]()
+![IM](images/3.jpg)
 <br>
-![IM]()
+![IM](images/4.jpg)
