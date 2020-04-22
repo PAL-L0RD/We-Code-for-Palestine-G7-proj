@@ -53,9 +53,5 @@ Internal for Students: help the instructors, manage classes, and activities, stu
 
 
 
-#### Profiles
-![user profile](https://github.com/PAL-L0RD/We-Code-for-Palestine-G7-proj/blob/master/images/userProfile.png)
 
-
-
-Here is the Paper Design [Paper Design]( https://drive.google.com/open?id=1bmDX23bzaVAGd4aWTvwQbJwoWo9-PvB5).
+### Here is the Paper Design link [Paper Design]( https://drive.google.com/open?id=1bmDX23bzaVAGd4aWTvwQbJwoWo9-PvB5).
