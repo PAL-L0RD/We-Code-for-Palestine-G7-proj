@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   }, 
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(5),
   },
   title: {
     flexGrow: 1,
@@ -24,7 +24,8 @@ export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    
+    <div className={classes.root} >
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
@@ -38,9 +39,24 @@ export default function ButtonAppBar() {
           <Button color="inherit">Sign-up</Button>
         </Toolbar>
       </AppBar>
+      <div style={{
+          display: "block",
+          justifyContent: "right",
+          alignItems: "center",
+          backgroundColor: "#66B2FF"
+        }}
+      >
+      <br></br>
+      <div style={{
+          display: "block",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        ><h1>Welcome !</h1></div>
+      <br></br>
       <div>
-      <h1>Welcome !</h1>
       <h1>This is for testing</h1>
+      </div>
       <br></br>
       <h4>
       If you are here, good chances are you’re creative, passionate and clever.
