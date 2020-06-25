@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -16,10 +15,18 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+  pool: {
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 200,
+    marginTop: 0,
+    backgroundColor: 'blue',
+  },
+  container:{
+    justifyContent:'center'
+  }  
   },
 }));
-
-
 export default function ButtonAppBar() {
   const classes = useStyles();
 
@@ -41,19 +48,17 @@ export default function ButtonAppBar() {
       </AppBar>
       <div style={{
           display: "block",
-          justifyContent: "right",
+          justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "#66B2FF"
+          margin: 0,
+          textAlign: 'center'
         }}
       >
       <br></br>
-      <div style={{
-          display: "block",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        ><h1>Welcome !</h1></div>
-      <br></br>
+      <div>
+        <h1 class='pool'>Welcome !</h1>
+        <header>Hey</header>
+        </div>
       <div>
       <h1>This is for testing</h1>
       </div>
@@ -76,7 +81,7 @@ export default function ButtonAppBar() {
       instructors from Stanford University have served as the primary
       teachers during the two-week summer camp.
       </h4>
-      <h2>I am testing for fun</h2>
+      <h2>            I am testing for fun</h2>
       </div>
     </div>
   );
