@@ -10,8 +10,19 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 
 const useStyles = makeStyles((theme) => ({
+  wrapper:{
+    display: "block",
+    width:'40%',
+    marginLeft:'auto',
+    marginRight:'auto',
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: 'center'
+
+  },
   root: {
     flexGrow: 1,
+
   }, 
   menuButton: {
     marginRight: theme.spacing(5),
@@ -34,7 +45,6 @@ export default function Main() {
   const classes = useStyles();
 
   return (
-    
     <div className={classes.root} >
       <AppBar position="static">
         <Toolbar>
@@ -49,13 +59,7 @@ export default function Main() {
           <Button color="inherit">Sign-up</Button>
         </Toolbar>
       </AppBar>
-      <div style={{
-          display: "block",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: 0,
-          textAlign: 'center'
-        }}
+      <div className={classes.wrapper}
       >
       <br></br>
       <div style={{
