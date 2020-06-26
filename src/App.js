@@ -36,7 +36,7 @@ export default function ButtonAppBar() {
   return (
     
     <div className={classes.root} >
-      <AppBar position="static">
+      <AppBar position="dynamic">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon 
@@ -66,7 +66,7 @@ export default function ButtonAppBar() {
           textAlign: 'center',
         }}
       >
-      <h1 style={{backgroundColor: "#3f51b5" , color:"white"}}>Welcome!</h1>
+      <h1 className={classes.title}style={{backgroundColor: "#3f51b5" , color:"white"}}>Welcome!</h1>
       </div>
       <div>
       <h1>This is for testing</h1>
