@@ -7,38 +7,38 @@ import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
 import { AppBar } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+
 const useStyles = makeStyles((theme) => ({
-  wrapper: {
+  logo: {
+    width: '100px',
+    Height: '45px',
+    marginRight: theme.spacing(3),
     display: 'block',
-    width: '40%',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    justifyContent: 'center',
-    alignItems: 'center',
-    textAlign: 'center',
   },
   root: {
     flexGrow: 1,
   },
   menuButton: {
-    marginRight: theme.spacing(5),
+    marginRight: theme.spacing(3),
+    alignContent: 'right',
   },
   title: {
-    flexGrow: 2,
-    pool: {
-      textAlign: 'center',
-      fontWeight: 'bold',
-      fontSize: 200,
-      marginTop: 0,
-      backgroundColor: 'blue',
-    },
-    container: {
-      justifyContent: 'center',
-    },
+    flexGrow: 1,
   },
 }));
 export default function Main() {
   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <div className={classes.root}>
       <AppBar position="static">
@@ -48,13 +48,31 @@ export default function Main() {
             className={classes.menuButton}
             color="inherit"
             aria-label="menu"
+            aria-haspopup="true"
+            onClick={handleClick}
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            <img alt={''} src={require('./Pictures/logo1.jpg')} /> Code For
-            Palestine!
+          <Menu
+            id="simple-menu"
+            anchorEl={anchorEl}
+            keepMounted
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+          >
+            <MenuItem onClick={handleClose}>Addmission Dates</MenuItem>
+            <MenuItem onClick={handleClose}>Addmission Requirments</MenuItem>
+            <MenuItem onClick={handleClose}>last</MenuItem>
+          </Menu>
+          <img
+            className={classes.logo}
+            alt={''}
+            src={require('./Pictures/logo1.jpg')}
+          />
+          <Typography variant="h5" className={classes.title}>
+            Code For Palestine!
           </Typography>
+
           <Button color="inherit">Login</Button>
           <Button color="inherit">Sign-up</Button>
         </Toolbar>
