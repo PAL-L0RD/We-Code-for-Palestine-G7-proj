@@ -9,6 +9,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { AppBar } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Bar1 from './Components/MainPage';
+import Idiot from './Components/sec2.js';
+
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     display: 'block',
@@ -81,6 +83,7 @@ export default function Main() {
           teachers during the two-week summer camp.
         </h4>
         <h2> I am testing for fun</h2>
+        <Idiot />
       </div>
     </div>
   );
