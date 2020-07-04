@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Batman from './Fin1';
+import Batman from './Navststem';
 import MainBar from './Components/MainBar';
 const useStyles = makeStyles((theme) => ({
   wrapper: {
