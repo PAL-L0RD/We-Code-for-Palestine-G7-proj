@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Daniel from './learningstates';
+import Goha from './prevle';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Daniel />
+    <Goha />
   </React.StrictMode>,
   document.getElementById('root')
 );
