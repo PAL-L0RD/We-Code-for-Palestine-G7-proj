@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import Navststem from './Navststem';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Da1 from './Navststem';
 import App from './App';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Navststem />
   </React.StrictMode>,
   document.getElementById('root')
 );
