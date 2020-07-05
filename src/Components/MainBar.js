@@ -7,6 +7,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { AppBar } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import MainMen from './MainMen';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import Learn7 from '../learningflex';
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
@@ -49,6 +51,16 @@ function MainBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
+        <Router>
+          <Switch>
+            <ul>
+              <li>
+                <Link to="/Flex">Flextest</Link>
+              </li>
+            </ul>
+          </Switch>
+          <Route exact path="/Flex" component={Learn7} />
+        </Router>
         <Toolbar>
           <MainMen />
           <Typography variant="h6" className={classes.title}>
@@ -59,7 +71,7 @@ function MainBar() {
             />
             Code For Palestine!
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit"></Button>
           <Button color="inherit">Sign-up</Button>
         </Toolbar>
       </AppBar>

@@ -57,9 +57,9 @@ function Main() {
         </div>
         <br></br>
         <h4>
-          If you are here, good chances are you’re creative, passionate and
-          clever. Code for Palestine was born in 2015 out of a desire to teach
-          coding and entrepreneurial skills to some of the brightest high school
+          If you are here, good chances you’re creative, passionate and clever.
+          Code for Palestine was born in 2015 out of a desire to teach coding
+          and entrepreneurial skills to some of the brightest high school
           students throughout the West Bank and Gaza Strip. The organization
           funding the initiative, the PalTel Group Foundation [PGF], recognized
           that there weren’t enough students graduating from Palestinian
