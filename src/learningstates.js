@@ -34,6 +34,7 @@ class Daniel extends React.Component {
           <h2>Log out</h2>
         </button>
         <br></br>
+        {word}
       </div>
     );
   }

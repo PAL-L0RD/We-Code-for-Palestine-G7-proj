@@ -51,16 +51,6 @@ function MainBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Router>
-          <Switch>
-            <ul>
-              <li>
-                <Link to="/Flex">Flextest</Link>
-              </li>
-            </ul>
-          </Switch>
-          <Route exact path="/Flex" component={Learn7} />
-        </Router>
         <Toolbar>
           <MainMen />
           <Typography variant="h6" className={classes.title}>
@@ -74,6 +64,16 @@ function MainBar() {
           <Button color="inherit"></Button>
           <Button color="inherit">Sign-up</Button>
         </Toolbar>
+        <Router>
+          <Switch>
+            <ul>
+              <li>
+                <Link to="/Flex">Flextest</Link>
+              </li>
+            </ul>
+          </Switch>
+          <Route exact path="/Flex" component={Learn7} />
+        </Router>
       </AppBar>
       <br></br>
     </div>
