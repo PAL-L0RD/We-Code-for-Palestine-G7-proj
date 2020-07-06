@@ -1,9 +1,10 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
-import { makeStyles, emphasize } from '@material-ui/core/styles';
-import MainBar from './Components/MainBar';
+import { Grid, formatMs } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import gridtest from './Components/LearningGrid.jsx';
 import db from './firebase.js';
+import LearningGrids from './Components/LearningGrid.jsx';
+import TestGraph from './Components/Graphing.jsx';
 function handleClick() {
   db.collection('Masters').doc('Amro').set({
     Fullname: 'Amro Abou-Hachem',
@@ -81,7 +82,8 @@ function Main() {
           teachers during the two-week summer camp.
         </h4>
         <h2> I am testing for fun</h2>
-        <gridtest />
+        <LearningGrids />
+        <TestGraph />
         <br></br>
       </div>
     </div>

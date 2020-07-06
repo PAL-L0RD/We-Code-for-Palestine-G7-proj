@@ -1,5 +1,7 @@
 import React from 'react';
 import Noob from './links1';
+import Cardtest from './cardtest';
+
 class Amro extends React.Component {
   render() {
     return (
@@ -16,6 +18,7 @@ class Amro extends React.Component {
           thename="Reddit"
           thelink="https://marketingland.com/wp-content/ml-loads/2014/07/reddit-combo-1920-800x450.png"
         />
+        <Cardtest />
       </favorite>
     );
   }

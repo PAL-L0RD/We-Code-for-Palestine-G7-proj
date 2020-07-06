@@ -16,9 +16,7 @@ import Learn7 from './learningflex';
 import MenItem from './Components/MenuItem.jsx';
 import State8 from './Components/sec2';
 import learn8 from './prevle';
-import SingUp from './Components/SignUp';
-import Signup from './Components/SignUp';
-
+import LearningGrids from './Components/LearningGrid.jsx';
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     display: 'block',
@@ -87,7 +85,7 @@ function App2() {
                           <MenItem name7="State 2" link7="/State2" />
                         </MenuItem>
                         <MenuItem onClick={popupState.close}>
-                          <MenItem name7="State test" link7="/State" />
+                          <MenItem thename="State test" thelink="/State" />
                         </MenuItem>
                       </Menu>
                     </React.Fragment>
@@ -118,8 +116,7 @@ function App2() {
         <Route exact path="/" component={Main} />
         <Route exact path="/Flex" component={Learn7} />
         <Route exact path="/state" component={learn8} />
-        <Route exact path="/State2" component={State8} />
-        <Route exact path="/SignUp" component={Signup} />
+        <Route exact path="/State2" component={LearningGrids} />
       </Router>
     </div>
   );
