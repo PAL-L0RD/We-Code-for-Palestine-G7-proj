@@ -1,6 +1,3 @@
-import Main from './App';
-import Learn7 from './learningflex';
-import learn8 from './prevle';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
@@ -12,8 +9,14 @@ import { AppBar } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-
+import Main from './App';
+import Learn7 from './learningflex';
+import MenItem from './Components/MenuItem.jsx';
+import State8 from './Components/sec2';
+import learn8 from './prevle';
+import SingUp from './Components/SignUp';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
+import Signup from './Components/SignUp';
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
@@ -27,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     width: '100px',
-    marginTop: '20px',
+    marginTop: '0px',
     marginRight: theme.spacing(5),
     heigtht: '30px',
   },
@@ -83,20 +86,29 @@ function App2() {
                             Flex
                           </Link>
                         </MenuItem>
+                        <MenuItem onClick={popupState.close}>
+                          <Link to="/State" color="inherit">
+                            State2
+                          </Link>
+                        </MenuItem>
                       </Menu>
                     </React.Fragment>
                   )}
                 </PopupState>
                 <Typography variant="h6" className={classes.title}>
-                  <img
-                    className={classes.logo}
-                    alt={''}
-                    src={require('./Components/logo1.jpg')}
-                  />
+                  <Button>
+                    <Link to="/" color="inherit">
+                      <img
+                        className={classes.logo}
+                        alt={''}
+                        src={require('./Components/logo1.jpg')}
+                      />
+                    </Link>
+                  </Button>
                   Code For Palestine!
                 </Typography>
                 <Button color="inherit">
-                  <Link to="/" color="inherit">
+                  <Link to="/SignUp" color="inherit">
                     Sign-Up
                   </Link>
                 </Button>
@@ -108,6 +120,8 @@ function App2() {
         <Route exact path="/" component={Main} />
         <Route exact path="/Flex" component={Learn7} />
         <Route exact path="/state" component={learn8} />
+        <Route exact path="/State2" component={State8} />
+        <Route exact path="/SignUp" component={Signup} />
       </Router>
     </div>
   );

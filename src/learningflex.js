@@ -4,8 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     width: '40%',
-    justifyContent: 'start',
-    alignItems: 'start',
+    justifyContent: 'end',
+    alignItems: 'center',
     textAlign: 'center',
   },
 }));

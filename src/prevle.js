@@ -4,26 +4,23 @@ class Goha extends React.Component {
   constructor() {
     super();
     this.state = {
-      loggedIn: false,
+      Name: '',
+      Email: '',
+      Password: '',
     };
+  }
+  handleTextChange(event) {
+    event.preventDefault();
+  }
+  handleSubmit(event) {
+    this.forceUpdate();
+    event.preventDefault();
   }
   handleClick() {
     db.collection('Admins').doc('Amro').set({
       Fullname: 'Amro Abou-Hachem',
       email: 'amro@amro.ps',
       title: 'prof',
-    });
-    db.collection('Admins').doc('Hadeel').set({
-      Fullname: 'Hadeel',
-      email: 'Hadeel@hadeel.ps',
-    });
-    db.collection('Admins').doc('Naim').set({
-      Fullname: 'Naim Qawasmeh',
-      email: 'Naimqawasmeh@naim.ps',
-    });
-    db.collection('Admins').doc('Monya').set({
-      Fullname: 'Monya',
-      email: 'Monya@monya.ps',
     });
   }
   render() {
@@ -33,6 +30,28 @@ class Goha extends React.Component {
           <h1>Click Here</h1>
         </button>
         <br></br>
+        <form onSubmit={this.handleSubmit}>
+          <input
+            type="text"
+            maxlength="20"
+            placeholder="Full Name"
+            onChange={this.handleTextChange}
+          />
+          <input
+            type="text"
+            maxlength="20"
+            placeholder="Email"
+            onChange={this.handleTextChange}
+          />
+          <input
+            type="text"
+            maxlength="20"
+            placeholder="Password"
+            onChange={this.handleTextChange}
+          />
+
+          <button> Submit </button>
+        </form>
       </div>
     );
   }
