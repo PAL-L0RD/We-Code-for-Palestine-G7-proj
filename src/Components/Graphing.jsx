@@ -49,7 +49,7 @@ class Testgraph extends React.Component {
           chartType="PieChart"
           data={[
             ['Girls', 'Boys'],
-            ['Girls', 100],
+            ['Girls', 1000],
             ['Boys', 110],
           ]}
           options={pieOptions}
