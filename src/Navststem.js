@@ -10,7 +10,11 @@ import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
 import { AppBar } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
-import MainMen from './Components/MainMen';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+
+import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
+
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     display: 'block',
@@ -56,7 +60,33 @@ function App2() {
           <div className={classes.root}>
             <AppBar position="static">
               <Toolbar>
-                <MainMen />
+                <PopupState variant="popover" popupId="demo-popup-menu">
+                  {(popupState) => (
+                    <React.Fragment>
+                      <IconButton
+                        edge="start"
+                        color="inherit"
+                        className={classes.menuButton}
+                        {...bindTrigger(popupState)}
+                        aria-label="menu"
+                      >
+                        <MenuIcon />
+                      </IconButton>
+                      <Menu {...bindMenu(popupState)}>
+                        <MenuItem onClick={popupState.close}>
+                          <Link to="/" color="inherit">
+                            Home
+                          </Link>
+                        </MenuItem>
+                        <MenuItem onClick={popupState.close}>
+                          <Link to="/Flex" color="inherit">
+                            Flex
+                          </Link>
+                        </MenuItem>
+                      </Menu>
+                    </React.Fragment>
+                  )}
+                </PopupState>
                 <Typography variant="h6" className={classes.title}>
                   <img
                     className={classes.logo}
@@ -67,11 +97,8 @@ function App2() {
                 </Typography>
                 <Button color="inherit">
                   <Link to="/" color="inherit">
-                    Home
+                    Sign-Up
                   </Link>
-                </Button>
-                <Button color="inherit">
-                  <Link to="/State">State</Link>
                 </Button>
               </Toolbar>
             </AppBar>
