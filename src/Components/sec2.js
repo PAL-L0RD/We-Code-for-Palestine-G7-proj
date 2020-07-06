@@ -13,7 +13,7 @@ class Amro extends React.Component {
           thelink="https://marketingland.com/wp-content/ml-loads/2014/07/reddit-combo-1920-800x450.png"
         />
         <Noob
-          thename="Facebook"
+          thename="Reddit"
           thelink="https://marketingland.com/wp-content/ml-loads/2014/07/reddit-combo-1920-800x450.png"
         />
       </favorite>

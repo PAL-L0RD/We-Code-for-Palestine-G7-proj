@@ -1,8 +1,6 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-
 import { BrowserRouter as Link } from 'react-router-dom';
-
+import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     width: '40%',
@@ -11,13 +9,15 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
 }));
-export default function MenuItem() {
-  const classes = useStyles();
-  return (
-    <div>
-      <Link to={this.props.link5} color="inherit">
-        {this.props.name5}
-      </Link>
-    </div>
-  );
+class stupid extends React.Component {
+  render() {
+    return (
+      <div>
+        <a onclick="return false" href={this.props.link7}>
+          {this.props.name7}
+        </a>
+      </div>
+    );
+  }
 }
+export default stupid;
