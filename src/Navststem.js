@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import React from 'react';
+import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -15,7 +17,6 @@ import MenItem from './Components/MenuItem.jsx';
 import State8 from './Components/sec2';
 import learn8 from './prevle';
 import SingUp from './Components/SignUp';
-import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 import Signup from './Components/SignUp';
 
 const useStyles = makeStyles((theme) => ({
@@ -77,19 +78,16 @@ function App2() {
                       </IconButton>
                       <Menu {...bindMenu(popupState)}>
                         <MenuItem onClick={popupState.close}>
-                          <Link to="/" color="inherit">
-                            Home
-                          </Link>
+                          <MenItem name7="Home" link7="/" />
                         </MenuItem>
                         <MenuItem onClick={popupState.close}>
-                          <Link to="/Flex" color="inherit">
-                            Flex
-                          </Link>
+                          <MenItem name7="Flex" link7="/Flex" />
                         </MenuItem>
                         <MenuItem onClick={popupState.close}>
-                          <Link to="/State" color="inherit">
-                            State2
-                          </Link>
+                          <MenItem name7="State 2" link7="/State2" />
+                        </MenuItem>
+                        <MenuItem onClick={popupState.close}>
+                          <MenItem name7="State test" link7="/State" />
                         </MenuItem>
                       </Menu>
                     </React.Fragment>
@@ -108,7 +106,7 @@ function App2() {
                   Code For Palestine!
                 </Typography>
                 <Button color="inherit">
-                  <Link to="/SignUp" color="inherit">
+                  <Link to="/" color="white">
                     Sign-Up
                   </Link>
                 </Button>
