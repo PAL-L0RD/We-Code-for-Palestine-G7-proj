@@ -1,6 +1,8 @@
 import React from 'react';
+import { Grid } from '@material-ui/core';
 import { makeStyles, emphasize } from '@material-ui/core/styles';
 import MainBar from './Components/MainBar';
+import gridtest from './Components/LearningGrid.jsx';
 import db from './firebase.js';
 function handleClick() {
   db.collection('Masters').doc('Amro').set({
@@ -11,7 +13,8 @@ function handleClick() {
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     display: 'block',
-    width: '40%',
+
+    width: '60%',
     marginLeft: 'auto',
     marginRight: 'auto',
     justifyContent: 'center',
@@ -43,7 +46,6 @@ function Main() {
   return (
     <div className={classes.root}>
       <div className={classes.wrapper}>
-        <br></br>
         <div
           style={{
             display: 'flex',
@@ -57,9 +59,7 @@ function Main() {
             Welcome!
           </h1>
         </div>
-        <div>
-          <h1>This is for testing</h1>
-        </div>
+        <h1>This is for testing</h1>
         <br></br>
         <h4>
           If you are here, good chances you’re creative, passionate and clever.
@@ -81,7 +81,8 @@ function Main() {
           teachers during the two-week summer camp.
         </h4>
         <h2> I am testing for fun</h2>
-        <button onClick={handleClick()}></button>
+        <gridtest />
+        <br></br>
       </div>
     </div>
   );
