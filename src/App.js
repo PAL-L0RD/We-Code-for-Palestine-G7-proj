@@ -1,6 +1,13 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, emphasize } from '@material-ui/core/styles';
 import MainBar from './Components/MainBar';
+import db from './firebase.js';
+function handleClick() {
+  db.collection('Masters').doc('Amro').set({
+    Fullname: 'Amro Abou-Hachem',
+    email: 'amro@amro.ps',
+  });
+}
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     display: 'block',
@@ -35,7 +42,6 @@ function Main() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <MainBar />
       <div className={classes.wrapper}>
         <br></br>
         <div
@@ -75,6 +81,7 @@ function Main() {
           teachers during the two-week summer camp.
         </h4>
         <h2> I am testing for fun</h2>
+        <button onClick={handleClick()}></button>
       </div>
     </div>
   );

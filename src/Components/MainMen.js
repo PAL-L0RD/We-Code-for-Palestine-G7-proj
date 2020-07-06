@@ -31,7 +31,7 @@ export default function Mainmen() {
           </IconButton>
           <Menu {...bindMenu(popupState)}>
             <MenuItem onClick={popupState.close}>
-              <Router>
+              {/* <Router>
                 <Switch>
                   <ul>
                     <li>
@@ -40,7 +40,7 @@ export default function Mainmen() {
                   </ul>
                 </Switch>
                 <Route exact path="/Flex" component={Learn7} />
-              </Router>
+              </Router> */}
             </MenuItem>
             <MenuItem onClick={popupState.close}>Flexlearning</MenuItem>
           </Menu>

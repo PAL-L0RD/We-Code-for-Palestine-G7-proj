@@ -11,6 +11,5 @@ const firebaseConfig = {
   measurementId: 'G-RTPL4ETH3R',
 }; // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-var database = firebase.firebase();
-export { firebase, database as default };
+var db = firebase.firestore();
+export { firebase, db as default };
