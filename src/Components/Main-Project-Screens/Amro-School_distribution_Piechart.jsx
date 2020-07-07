@@ -53,20 +53,14 @@ class School_distribution extends React.Component {
     };
   }
   componentDidMount() {
-    db.collection('Schools')
+    db.collection('AnuallNumbers')
+      .doc('School_dis')
       .get()
-      .then((querySnapshot) => {
-        const data = querySnapshot.docs.map((doc) => doc.data());
-        this.setState({ Schools: data });
-        Object.values(this.state.Schools).map((product) =>
-          this.setState({ unr: product.unr })
-        );
-        Object.values(this.state.Schools).map((product) =>
-          this.setState({ Public_School: product.Public_Schools })
-        );
-        Object.values(this.state.Schools).map((product) =>
-          this.setState({ Private_School: product.Private })
-        );
+      .then((doc) => {
+        const data = doc.data();
+        this.setState({ unr: data['UN_SC'] });
+        this.setState({ Private_School: data['PR_SC'] });
+        this.setState({ Public_School: data['PU_SC'] });
       });
   }
 
