@@ -18,18 +18,9 @@ class Goha extends React.Component {
     db.collection('Admins')
       .get()
       .then((querySnapshot) => {
-        let data = {};
-        querySnapshot.docs.map(function (doc) {
-          data[doc.id] = doc.data();
-          arr.push(data[doc.id]);
-        });
-        // const data = querySnapshot.docs.map((doc) => doc.data());
-        //var arr = Object.entries(data);
-        this.setState({ Name: arr });
+        const data = querySnapshot.docs.map((doc) => doc.data());
+        this.setState({ Name: data });
         console.info(arr);
-        // // const goi = Object.values(this.state.Name).forEach((product) =>
-        // //   console.log(product.Fullname)
-        // );
       });
   }
   handleTextChange() {

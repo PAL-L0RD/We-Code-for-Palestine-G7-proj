@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Chart from 'react-google-charts';
 
 const pieOptions = {
@@ -38,7 +37,7 @@ const pieOptions = {
   },
   fontName: 'Roboto',
 };
-class Pie_Chart extends React.Component {
+class Amro_Female_Male_distribution extends React.Component {
   state = {
     chartImageURI: '',
   };
@@ -49,17 +48,16 @@ class Pie_Chart extends React.Component {
           chartType="PieChart"
           data={[
             ['Females', 'Males'],
-            ['Girls', 100],
-            ['Boys', 110],
+            ['Females', 69],
+            ['Boys', 65],
           ]}
           options={pieOptions}
-          graph_id="PieChart"
+          graph_id="PieChart-1"
           width={'100%'}
           height={'400px'}
-          legend_toggle
         />
       </div>
     );
   }
 }
-export default Pie_Chart;
+export default Amro_Female_Male_distribution;

@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import React from 'react';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
-
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -91,6 +90,9 @@ function App2() {
                         <MenuItem onClick={popupState.close}>
                           <MenItem name7="Amro Charts" link7="/Amro_charts" />
                         </MenuItem>
+                        <MenuItem onClick={popupState.close}>
+                          <MenItem thename="THE TASK" thelink="/Task" />
+                        </MenuItem>
                       </Menu>
                     </React.Fragment>
                   )}
@@ -122,6 +124,7 @@ function App2() {
         <Route exact path="/state" component={learn8} />
         <Route exact path="/State2" component={LearningGrids} />
         <Route exact path="/Amro_charts" component={Amro_charts} />
+        <Route exact path="/Task" component={State8} />
       </Router>
     </div>
   );
