@@ -65,7 +65,7 @@ class Goha extends React.Component {
   }
   handleClick() {
     db.collection('Admins').doc('Amro').set({
-      Fullname: 'Amro Abou-Hachem',
+      Fullname: '--',
       email: 'amro@amro.ps',
       title: 'prof',
     });
