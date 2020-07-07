@@ -91,7 +91,7 @@ function App2() {
                           <MenItem name7="Amro Charts" link7="/Amro_charts" />
                         </MenuItem>
                         <MenuItem onClick={popupState.close}>
-                          <MenItem thename="THE TASK" thelink="/Task" />
+                          <MenItem thename="thetask" thelink="/State" />
                         </MenuItem>
                       </Menu>
                     </React.Fragment>
@@ -124,7 +124,6 @@ function App2() {
         <Route exact path="/state" component={learn8} />
         <Route exact path="/State2" component={LearningGrids} />
         <Route exact path="/Amro_charts" component={Amro_charts} />
-        <Route exact path="/Task" component={State8} />
       </Router>
     </div>
   );
