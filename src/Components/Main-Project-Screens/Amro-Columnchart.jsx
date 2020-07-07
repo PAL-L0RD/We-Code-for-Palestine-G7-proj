@@ -17,40 +17,16 @@ let color = '#4618ab';
 class Amro_Columnchart extends React.Component {
   componentDidMount() {
     db.collection('AnuallNumbers')
+      .doc('Years')
       .get()
-      .then((querySnapshot) => {
-        const data = querySnapshot.docs.map((doc) => doc.data());
-        this.setState({ Years: data });
-        Object.values(this.state.Years).map((product) =>
-          this.setState({ y2015: product.y2015 })
-        );
-        Object.values(this.state.Years).map((product) =>
-          this.setState({ y2016: product.y2016 })
-        );
-        Object.values(this.state.Years).map((product) =>
-          this.setState({ y2018: product.y2018 })
-        );
-        Object.values(this.state.Years).map((product) =>
-          this.setState({ y2017: product.y2017 })
-        );
-        Object.values(this.state.Years).map((product) =>
-          this.setState({ y2016: product.y2016 })
-        );
-        Object.values(this.state.Years).map((product) =>
-          this.setState({ y2019: product.y2019 })
-        );
-        Object.values(this.state.Years).map((product) =>
-          this.setState({ y2020: product.y2020 })
-        );
-
-        // var i;
-        // var x;
-        // for (i = 0; i < this.state.Years.length; i++) {
-        //   x = 'y' + i;
-        //   Object.values(this.state.Years).map((product) =>
-        //     this.setState({ x: product.x })
-        //   );
-        // }
+      .then((doc) => {
+        const data = doc.data();
+        this.setState({ y2015: data['y2015'] });
+        this.setState({ y2016: data['y2016'] });
+        this.setState({ y2017: data['y2017'] });
+        this.setState({ y2018: data['y2018'] });
+        this.setState({ y2019: data['y2019'] });
+        this.setState({ y2020: data['y2020'] });
       });
   }
   constructor() {

@@ -50,17 +50,13 @@ class Amro_Geo_distribution extends React.Component {
     };
   }
   componentDidMount() {
-    db.collection("Students's Geographical Distribution")
+    db.collection('AnuallNumbers')
+      .doc('Geo_dis')
       .get()
-      .then((querySnapshot) => {
-        const data = querySnapshot.docs.map((doc) => doc.data());
-        this.setState({ Name: data });
-        Object.values(this.state.Name).map((product) =>
-          this.setState({ Gaza: product.Gaza })
-        );
-        Object.values(this.state.Name).map((product) =>
-          this.setState({ Westbank: product.Westbank })
-        );
+      .then((doc) => {
+        const data = doc.data();
+        this.setState({ Gaza: data['Gaza'] });
+        this.setState({ Westbank: data['Westbank'] });
       });
   }
   render() {
