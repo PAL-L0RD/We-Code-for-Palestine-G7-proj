@@ -17,6 +17,7 @@ import MenItem from './Components/MenuItem.jsx';
 import State8 from './Components/sec2';
 import learn8 from './prevle';
 import LearningGrids from './Components/LearningGrid.jsx';
+import Amro_charts from './Components/Main-Project-Screens/Amro-Components';
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     display: 'block',
@@ -87,6 +88,9 @@ function App2() {
                         <MenuItem onClick={popupState.close}>
                           <MenItem thename="State test" thelink="/State" />
                         </MenuItem>
+                        <MenuItem onClick={popupState.close}>
+                          <MenItem name7="Amro Charts" link7="/Amro_charts" />
+                        </MenuItem>
                       </Menu>
                     </React.Fragment>
                   )}
@@ -117,6 +121,7 @@ function App2() {
         <Route exact path="/Flex" component={Learn7} />
         <Route exact path="/state" component={learn8} />
         <Route exact path="/State2" component={LearningGrids} />
+        <Route exact path="/Amro_charts" component={Amro_charts} />
       </Router>
     </div>
   );
