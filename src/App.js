@@ -5,6 +5,9 @@ import gridtest from './Components/LearningGrid.jsx';
 import db from './firebase.js';
 import LearningGrids from './Components/LearningGrid.jsx';
 import TestGraph from './Components/Graphing.jsx';
+function componentdidmount(e) {
+  e.preventDefault();
+}
 function handleClick() {
   db.collection('Masters').doc('Amro').set({
     Fullname: 'Amro Abou-Hachem',

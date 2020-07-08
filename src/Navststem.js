@@ -10,11 +10,12 @@ import { AppBar } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import Main from './App';
+import Main from './Components/App2';
 import Learn7 from './learningflex';
 import MenItem from './Components/MenuItem.jsx';
 import State8 from './Components/sec2';
 import sign8 from './Components/SignUp';
+import login8 from './Components/signin7';
 import learn8 from './prevle';
 import LearningGrids from './Components/LearningGrid.jsx';
 import Amro_charts from './Components/Main-Project-Screens/Amro-Components';
@@ -125,7 +126,7 @@ function App2() {
         <Route exact path="/state" component={learn8} />
         <Route exact path="/State2" component={LearningGrids} />
         <Route exact path="/Amro_charts" component={Amro_charts} />
-        <Route exact path="/signup" component={sign8} />
+        <Route exact path="/signup" component={login8} />
       </Router>
     </div>
   );

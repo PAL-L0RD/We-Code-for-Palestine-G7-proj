@@ -1,19 +1,21 @@
 import React from 'react';
 import { auth } from '../firebase';
-class Noob extends React.Component {
+import db from '../firebase';
+class log_In extends React.Component {
   handleChange(event) {
     this.setState({ [event.target.name]: event.target.value });
+    console.log(db.name);
   }
-
-  signup(event) {
+  Login(event) {
+    console.log('hey');
     event.preventDefault();
     auth
-      .createUserWithEmailAndPassword(this.state.email, this.state.password)
+      .signInWithEmailAndPassword(this.state.email, this.state.password)
       .then((res) => {
         alert(res);
       })
       .catch((err) => {
-        alert(err);
+        console.log(err);
       });
   }
 
@@ -24,12 +26,12 @@ class Noob extends React.Component {
       password: '',
     };
     this.handleChange = this.handleChange.bind(this);
-    this.signup = this.signup.bind(this);
+    this.Login = this.Login.bind(this);
   }
   render() {
     return (
       <div>
-        <form onSubmit={this.signup}>
+        <form onSubmit={this.Login}>
           <input
             type="text"
             name="email"
@@ -46,8 +48,10 @@ class Noob extends React.Component {
           />
           <button> Submit </button>
         </form>
+        <button onClick={() => auth.signOut()}>Sign out</button>
+        <h1>Hey</h1>
       </div>
     );
   }
 }
-export default Noob;
+export default log_In;
