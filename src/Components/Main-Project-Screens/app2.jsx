@@ -1,10 +1,8 @@
 import React from 'react';
 import { auth } from '../firebase';
-import db from '../firebase';
-class Goha extends React.Component {
+class Noob extends React.Component {
   handleChange(event) {
     this.setState({ [event.target.name]: event.target.value });
-    console.log(db.name);
   }
 
   signup(event) {
@@ -52,4 +50,4 @@ class Goha extends React.Component {
     );
   }
 }
-export default Goha;
+export default Noob;

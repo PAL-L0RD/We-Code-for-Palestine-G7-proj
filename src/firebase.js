@@ -1,5 +1,7 @@
 const firebase = require('firebase/app');
 require('firebase/firestore');
+require('firebase/auth');
+require('firebase/firestore');
 const firebaseConfig = {
   apiKey: 'AIzaSyC9D2Cyimy3mrT0zMdkHYaOlJi4di4-yQQ',
   authDomain: 'code-for-palestine.firebaseapp.com',
@@ -12,4 +14,6 @@ const firebaseConfig = {
 }; // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 var db = firebase.firestore();
-export { firebase, db as default };
+var auth = firebase.auth();
+
+export { firebase, db as default, auth };

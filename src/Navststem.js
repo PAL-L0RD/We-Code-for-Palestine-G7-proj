@@ -14,6 +14,7 @@ import Main from './App';
 import Learn7 from './learningflex';
 import MenItem from './Components/MenuItem.jsx';
 import State8 from './Components/sec2';
+import sign8 from './Components/SignUp';
 import learn8 from './prevle';
 import LearningGrids from './Components/LearningGrid.jsx';
 import Amro_charts from './Components/Main-Project-Screens/Amro-Components';
@@ -110,7 +111,7 @@ function App2() {
                   Code For Palestine!
                 </Typography>
                 <Button color="inherit">
-                  <Link to="/" color="white">
+                  <Link to="/signup" color="white">
                     Sign-Up
                   </Link>
                 </Button>
@@ -124,6 +125,7 @@ function App2() {
         <Route exact path="/state" component={learn8} />
         <Route exact path="/State2" component={LearningGrids} />
         <Route exact path="/Amro_charts" component={Amro_charts} />
+        <Route exact path="/signup" component={sign8} />
       </Router>
     </div>
   );
