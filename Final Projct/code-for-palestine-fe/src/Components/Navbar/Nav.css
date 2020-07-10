@@ -1,0 +1,59 @@
+.menuButton {
+    
+    color:"green";
+    justify-content:flex-end;
+    align-items: flex-end;
+    margin-left:70px;
+    border-radius: 25px;
+    background-color: #dadada;
+    padding: 10px;
+  };
+div{
+    background-color: red;
+}
+.title{
+    color:green;
+    flex-grow: 1;
+    background-color: #dadada;
+    padding: 10px;
+    margin-left: 0;
+    padding-left: 16px;
+    
+    border-radius: 25px;
+}
+.AppBar{
+background-color:white;
+border-color: green;
+border-width: 0px;
+
+
+
+}
+.null{
+    position: absolute;
+   
+    left: 91.2%;
+}
+.Logo{
+    height: 60px;
+    
+}
+.ld{
+    height: 7.5px;
+}
+.Bar{
+    background-color: rgb(250, 250, 250) !important;
+    border-bottom: 3px solid  #84c318;
+}
+.icon{
+    color:rgb(76, 86, 106) !important
+}
+.dave{
+    position:absolute !important;
+    top:10 !important;
+    right:0 !important;
+    margin-right: 15px;
+}
+.Login-Button{
+    background-color: #84c318 !important;
+}
