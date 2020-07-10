@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Chart from 'react-google-charts';
 import db from '../../../firebase';
-let color = '#4618ab';
+let color1 = '#4618ab';
 // https://developers.google.com/chart/interactive/docs/gallery/barchart check this link if you want to know more about the styling - Amro
 
 // const data = [
