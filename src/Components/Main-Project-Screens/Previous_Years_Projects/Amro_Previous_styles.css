@@ -1,0 +1,16 @@
+.ima1 {
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+.backimg {
+  background-image: url(https://scontent.fjrs1-1.fna.fbcdn.net/v/t1.0-9/67173470_10156675414030889_5556384081140252672_o.jpg?_nc_cat=100&_nc_sid=8024bb&_nc_ohc=ifY5uuirQ28AX9j5y_4&_nc_ht=scontent.fjrs1-1.fna&oh=b899f17bda2917d162a6aa4a1bd177b2&oe=5F2C5282);
+}
+.card {
+  min-height: 400px;
+  width: fit-content;
+}
+.card1 {
+  padding: 40px;
+  min-height: 300px;
+}

@@ -18,6 +18,8 @@ import sign8 from './Components/SignUp';
 import learn8 from './prevle';
 import LearningGrids from './Components/LearningGrid.jsx';
 import Amro_charts from './Components/Main-Project-Screens/Amro_Chart_Mainscreen/Amro-Components.jsx';
+import previous_yeras from './Components/Main-Project-Screens/Previous_Years_Projects/Amro_Previous_years';
+import y3 from './Components/Main-Project-Screens/Previous_Years_Projects/Amro_Y3_projcect';
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     display: 'block',
@@ -89,6 +91,13 @@ function App2() {
                           <MenItem thename="State test" thelink="/State" />
                         </MenuItem>
                         <MenuItem onClick={popupState.close}>
+                          <MenItem name7="previous" link7="/prev" />
+                        </MenuItem>
+                        <MenuItem onClick={popupState.close}>
+                          <MenItem name7="Amro Charts" link7="/Amro_charts" />
+                        </MenuItem>
+
+                        <MenuItem onClick={popupState.close}>
                           <MenItem name7="Amro Charts" link7="/Amro_charts" />
                         </MenuItem>
                         <MenuItem onClick={popupState.close}>
@@ -126,6 +135,8 @@ function App2() {
         <Route exact path="/State2" component={LearningGrids} />
         <Route exact path="/Amro_charts" component={Amro_charts} />
         <Route exact path="/signup" component={sign8} />
+        <Route exact path="/prev" component={previous_yeras} />
+        <Route exact path="/prev/y3" component={y3} />
       </Router>
     </div>
   );
