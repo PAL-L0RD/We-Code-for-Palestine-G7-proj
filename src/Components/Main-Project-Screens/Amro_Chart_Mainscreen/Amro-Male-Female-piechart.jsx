@@ -1,6 +1,6 @@
 import React from 'react';
 import Chart from 'react-google-charts';
-import db from '../../firebase';
+import db from '../../../firebase';
 const pieOptions = {
   title: '',
   pieHole: 0.6,
@@ -37,43 +37,45 @@ const pieOptions = {
   },
   fontName: 'Roboto',
 };
-class Amro_Geo_distribution extends React.Component {
+class Amro_Female_Male_distribution extends React.Component {
   state = {
     chartImageURI: '',
   };
   constructor() {
     super();
     this.state = {
-      Name: '',
-      Gaza: '',
-      Westbank: '',
+      Genders: '',
+      Males: '',
+      Females: '',
     };
   }
   componentDidMount() {
-    db.collection('AnuallNumbers')
-      .doc('Geo_dis')
+    db.collection('Gender_distribution')
       .get()
-      .then((doc) => {
-        const data = doc.data();
-        this.setState({ Gaza: data['Gaza'] });
-        this.setState({ Westbank: data['Westbank'] });
+      .then((querySnapshot) => {
+        const data = querySnapshot.docs.map((doc) => doc.data());
+        this.setState({ Genders: data });
+        console.info(data);
+        Object.values(this.state.Genders).map((product) =>
+          this.setState({ Males: product.Males })
+        );
+        Object.values(this.state.Genders).map((product) =>
+          this.setState({ Females: product.Females })
+        );
       });
   }
   render() {
-    var x = this.state.Gaza * 1;
-    var y = this.state.Westbank * 1;
-
     return (
       <div className="App">
         <Chart
           chartType="PieChart"
           data={[
-            ['Geographical Location', 'Number of Students'],
-            ['Gaza', x],
-            ['Westbank', y],
+            ['Gender', 'Number of students'],
+            ['Females', this.state.Females],
+            ['Males', this.state.Males],
           ]}
           options={pieOptions}
-          graph_id="PieChart-2"
+          graph_id="PieChart-1"
           width={'100%'}
           height={'400px'}
         />
@@ -81,4 +83,4 @@ class Amro_Geo_distribution extends React.Component {
     );
   }
 }
-export default Amro_Geo_distribution;
+export default Amro_Female_Male_distribution;

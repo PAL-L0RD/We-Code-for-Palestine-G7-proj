@@ -17,7 +17,7 @@ import State8 from './Components/sec2';
 import sign8 from './Components/SignUp';
 import learn8 from './prevle';
 import LearningGrids from './Components/LearningGrid.jsx';
-import Amro_charts from './Components/Main-Project-Screens/Amro-Components';
+import Amro_charts from './Components/Main-Project-Screens/Amro_Chart_Mainscreen/Amro-Components.jsx';
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     display: 'block',

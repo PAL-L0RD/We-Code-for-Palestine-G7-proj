@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Chart from 'react-google-charts';
-import db from '../../firebase';
-
+import db from '../../../firebase';
 const pieOptions = {
   title: '',
   pieHole: 0.6,
@@ -25,7 +23,7 @@ const pieOptions = {
     alignment: 'center',
     textStyle: {
       color: '233238',
-      fontSize: 18,
+      fontSize: 20,
     },
   },
   tooltip: {
@@ -35,56 +33,52 @@ const pieOptions = {
     left: 0,
     top: 0,
     width: '100%',
-    height: '100%',
+    height: '80%',
   },
   fontName: 'Roboto',
 };
-class School_distribution extends React.Component {
+class Amro_Geo_distribution extends React.Component {
   state = {
     chartImageURI: '',
   };
   constructor() {
     super();
     this.state = {
-      Schoolls: '',
-      unr: '',
-      Private_School: '',
-      Public_School: '',
+      Name: '',
+      Gaza: '',
+      Westbank: '',
     };
   }
   componentDidMount() {
     db.collection('AnuallNumbers')
-      .doc('School_dis')
+      .doc('Geo_dis')
       .get()
       .then((doc) => {
         const data = doc.data();
-        this.setState({ unr: data['UN_SC'] });
-        this.setState({ Private_School: data['PR_SC'] });
-        this.setState({ Public_School: data['PU_SC'] });
+        this.setState({ Gaza: data['Gaza'] });
+        this.setState({ Westbank: data['Westbank'] });
       });
   }
-
   render() {
+    var x = this.state.Gaza * 1;
+    var y = this.state.Westbank * 1;
+
     return (
       <div className="App">
         <Chart
-          width={'100%'}
-          height={'500px'}
           chartType="PieChart"
-          loader={<div>Loading Chart</div>}
           data={[
-            ['School type', 'Number of students'],
-            ['UNRWA schools', this.state.unr],
-            ['Private Schools', this.state.Private_School],
-            ['Public Schools', this.state.Public_School],
+            ['Geographical Location', 'Number of Students'],
+            ['Gaza', x],
+            ['Westbank', y],
           ]}
-          options={{
-            title: "Student's distribution based on their school type",
-          }}
-          rootProps={{ 'data-testid': '1' }}
+          options={pieOptions}
+          graph_id="PieChart-2"
+          width={'100%'}
+          height={'400px'}
         />
       </div>
     );
   }
 }
-export default School_distribution;
+export default Amro_Geo_distribution;

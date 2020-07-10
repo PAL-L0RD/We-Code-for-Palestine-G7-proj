@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Chart from 'react-google-charts';
-import db from '../../firebase';
+import db from '../../../firebase';
 let color = '#4618ab';
+// https://developers.google.com/chart/interactive/docs/gallery/barchart check this link if you want to know more about the styling - Amro
 
 // const data = [
 //   ['Element', 'Number of Students enrolled', { role: 'style' }],
@@ -32,7 +33,6 @@ class Amro_Columnchart extends React.Component {
   constructor() {
     super();
     this.state = {
-      Years: '',
       y2015: '',
       y2016: '',
       y2018: '',
@@ -43,10 +43,10 @@ class Amro_Columnchart extends React.Component {
   render() {
     const data = [
       ['Element', 'Number of Students enrolled', { role: 'style' }],
-      ['2015', this.state.y2015, 'x'], // RGB value
-      ['2016', this.state.y2016, 'x'], // English color name
+      ['2015', this.state.y2015, 'x'], // x  is the default color here
+      ['2016', this.state.y2016, 'x'],
       ['2017', this.state.y2017, 'x'],
-      ['2018', this.state.y2018, 'x'], // CSS-style declaration
+      ['2018', this.state.y2018, 'x'],
       ['2019', this.state.y2019, 'x'],
       ['2020', this.state.y2020, 'x'],
     ];

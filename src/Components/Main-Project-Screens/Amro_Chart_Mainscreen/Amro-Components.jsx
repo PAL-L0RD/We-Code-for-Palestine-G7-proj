@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import db from '../../firebase';
+import db from '../../../firebase';
 import Amro_Columnchart_Annual_students from './Amro-Columnchart.jsx';
 import Amro_School_distribution from './Amro-School_distribution_Piechart';
 import Amro_Fe_Ma_dist from './Amro-Male-Female-piechart.jsx';
