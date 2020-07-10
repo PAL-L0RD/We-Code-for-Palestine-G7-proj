@@ -6,7 +6,8 @@ import './Amro_Previous_styles.css';
 class Amro_Previoud_Mainscreen extends React.Component {
   render() {
     return (
-      <Fragment>
+      <Fragment className="limit">
+        <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
         <Grid container direction="row">
           <Grid item xs={0} sm={1} />
           <Grid item container direction="row" xs={12} sm={10}>

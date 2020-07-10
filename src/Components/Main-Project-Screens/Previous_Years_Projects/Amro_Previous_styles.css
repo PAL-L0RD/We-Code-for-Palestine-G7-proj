@@ -14,3 +14,10 @@
   padding: 40px;
   min-height: 300px;
 }
+.img_Main_previous {
+  height: auto;
+  width: auto;
+}
+.limit {
+  min-width: 300px;
+}

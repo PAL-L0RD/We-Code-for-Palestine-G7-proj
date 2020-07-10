@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import React from 'react';
+import React, { Fragment } from 'react';
 import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
 function App2() {
   const classes = useStyles();
   return (
-    <div>
+    <Fragment>
       <Router>
         <Switch>
           <div className={classes.root}>
@@ -138,7 +138,7 @@ function App2() {
         <Route exact path="/prev" component={previous_yeras} />
         <Route exact path="/prev/y3" component={y3} />
       </Router>
-    </div>
+    </Fragment>
   );
 }
 export default App2;
