@@ -43,7 +43,7 @@ class Amro_Columnchart extends React.Component {
   render() {
     const data = [
       ['Element', 'Number of Students enrolled', { role: 'style' }],
-      ['2015', this.state.y2015, 'x'], // x  is the default color here
+      ['2015', this.state.y2015, 'x'], // x  is the default color  - blue-
       ['2016', this.state.y2016, 'x'],
       ['2017', this.state.y2017, 'x'],
       ['2018', this.state.y2018, 'x'],
