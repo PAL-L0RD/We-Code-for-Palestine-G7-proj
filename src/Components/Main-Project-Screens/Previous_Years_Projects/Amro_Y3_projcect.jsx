@@ -1,11 +1,17 @@
-import React from 'react';
-
+import React, { Fragment } from 'react';
+import { Grid } from '@material-ui/core';
 class Amro_Y3_Projects extends React.Component {
   render() {
     return (
-      <div>
-        <div>Hey</div>
-      </div>
+      <Fragment>
+        <Grid container>
+          <Grid item sm={1} xs={0} />
+          <Grid container sm={10} xs={12}>
+            <Grid item></Grid>
+          </Grid>
+          <Grid item sm={1} xs={0} />
+        </Grid>
+      </Fragment>
     );
   }
 }
