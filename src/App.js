@@ -5,6 +5,7 @@ import gridtest from './Components/LearningGrid.jsx';
 import db from './firebase.js';
 import LearningGrids from './Components/LearningGrid.jsx';
 import TestGraph from './Components/Graphing.jsx';
+import Footer1 from './Components/Main-Project-Screens/Amro_Footer/Amro_Footer';
 function componentdidmount(e) {
   e.preventDefault();
 }

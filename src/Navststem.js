@@ -20,6 +20,8 @@ import LearningGrids from './Components/LearningGrid.jsx';
 import Amro_charts from './Components/Main-Project-Screens/Amro_Chart_Mainscreen/Amro-Components.jsx';
 import previous_yeras from './Components/Main-Project-Screens/Previous_Years_Projects/Amro_Previous_years';
 import y3_projects from './Components/Main-Project-Screens/Previous_Years_Projects/Amro_Y3_project';
+import Footer1 from './Components/Main-Project-Screens/Amro_Footer/Amro_Footer';
+
 const useStyles = makeStyles((theme) => ({
   wrapper: {
     display: 'block',
@@ -138,6 +140,7 @@ function App2() {
         <Route exact path="/prev" component={previous_yeras} />
         <Route exact path="/prev/y3" component={y3_projects} />
       </Router>
+      <Footer1 />
     </Fragment>
   );
 }
