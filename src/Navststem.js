@@ -21,6 +21,7 @@ import Amro_charts from './Components/Main-Project-Screens/Amro_Chart_Mainscreen
 import previous_yeras from './Components/Main-Project-Screens/Previous_Years_Projects/Amro_Previous_years';
 import y3_projects from './Components/Main-Project-Screens/Previous_Years_Projects/Amro_Y3_project';
 import Footer1 from './Components/Main-Project-Screens/Amro_Footer/Amro_Footer';
+import Bar from './Navbar1';
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
@@ -63,74 +64,8 @@ function App2() {
   return (
     <Fragment>
       <Router>
-        <Switch>
-          <div className={classes.root}>
-            <AppBar position="static">
-              <Toolbar>
-                <PopupState variant="popover" popupId="demo-popup-menu">
-                  {(popupState) => (
-                    <React.Fragment>
-                      <IconButton
-                        edge="start"
-                        color="inherit"
-                        className={classes.menuButton}
-                        {...bindTrigger(popupState)}
-                        aria-label="menu"
-                      >
-                        <MenuIcon />
-                      </IconButton>
-                      <Menu {...bindMenu(popupState)}>
-                        <MenuItem onClick={popupState.close}>
-                          <MenItem name7="Home" link7="/" />
-                        </MenuItem>
-                        <MenuItem onClick={popupState.close}>
-                          <MenItem name7="Flex" link7="/Flex" />
-                        </MenuItem>
-                        <MenuItem onClick={popupState.close}>
-                          <MenItem name7="State 2" link7="/State2" />
-                        </MenuItem>
-                        <MenuItem onClick={popupState.close}>
-                          <MenItem thename="State test" thelink="/State" />
-                        </MenuItem>
-                        <MenuItem onClick={popupState.close}>
-                          <MenItem name7="previous" link7="/prev" />
-                        </MenuItem>
-                        <MenuItem onClick={popupState.close}>
-                          <MenItem name7="Amro Charts" link7="/Amro_charts" />
-                        </MenuItem>
-
-                        <MenuItem onClick={popupState.close}>
-                          <MenItem name7="Amro Charts" link7="/Amro_charts" />
-                        </MenuItem>
-                        <MenuItem onClick={popupState.close}>
-                          <MenItem thename="thetask" thelink="/State" />
-                        </MenuItem>
-                      </Menu>
-                    </React.Fragment>
-                  )}
-                </PopupState>
-                <Typography variant="h6" className={classes.title}>
-                  <Button>
-                    <Link to="/" color="inherit">
-                      <img
-                        className={classes.logo}
-                        alt={''}
-                        src={require('./Components/logo1.jpg')}
-                      />
-                    </Link>
-                  </Button>
-                  Code For Palestine!
-                </Typography>
-                <Button color="inherit">
-                  <Link to="/signup" color="white">
-                    Sign-Up
-                  </Link>
-                </Button>
-              </Toolbar>
-            </AppBar>
-            <br></br>
-          </div>
-        </Switch>
+        <Bar />
+        <Switch></Switch>
         <Route exact path="/" component={Main} />
         <Route exact path="/Flex" component={Learn7} />
         <Route exact path="/state" component={learn8} />
@@ -139,8 +74,9 @@ function App2() {
         <Route exact path="/signup" component={sign8} />
         <Route exact path="/prev" component={previous_yeras} />
         <Route exact path="/prev/y3" component={y3_projects} />
+        <Route exact path="/about-us" component={State8} />
+        <Footer1 />
       </Router>
-      <Footer1 />
     </Fragment>
   );
 }
