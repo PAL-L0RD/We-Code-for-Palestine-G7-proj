@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Divider from '@material-ui/core/Divider';
 import ReactDOM from 'react-dom';
 import { Grid } from '@material-ui/core';
-import { Link } from '@material-ui/core';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import './Amro_Footer.css';
 import List from '@material-ui/core/List';
@@ -25,18 +25,15 @@ function Amro_footer() {
           <Grid item xs={4}>
             <List component="nav" aria-label="secondary mailbox folder">
               <ListItem button>
-                <Link to="/about-us">
-                  <ListItemText primary="Trash" />
-                </Link>
+                <Link to="/about-us"> Feedback</Link>
               </ListItem>
               <ListItem button>
-                <Link></Link>
-                <ListItemText primary="Spam" />
+                <Link to="/about-us"> Contact-us</Link>
               </ListItem>
             </List>
           </Grid>
           <Grid item xs={4}>
-            <Link to="/about-us"> Contact us : </Link>
+            <h1>Sponsers:</h1>
           </Grid>
         </Grid>
       </Fragment>
