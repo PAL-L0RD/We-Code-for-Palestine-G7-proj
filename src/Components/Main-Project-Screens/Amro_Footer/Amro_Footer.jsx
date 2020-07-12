@@ -22,12 +22,11 @@ function Amro_footer() {
               <img className="img" src={Im1} />
             </div>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={4}>
             <List component="nav" aria-label="secondary mailbox folder">
               <ListItem button>
                 <Link to="/about-us">
-                  {' '}
-                  <ListItemText primary="Trash" />{' '}
+                  <ListItemText primary="Trash" />
                 </Link>
               </ListItem>
               <ListItem button>
@@ -36,11 +35,8 @@ function Amro_footer() {
               </ListItem>
             </List>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={4}>
             <Link to="/about-us"> Contact us : </Link>
-          </Grid>
-          <Grid item xs={3}>
-            <h1>Feedback</h1>
           </Grid>
         </Grid>
       </Fragment>
