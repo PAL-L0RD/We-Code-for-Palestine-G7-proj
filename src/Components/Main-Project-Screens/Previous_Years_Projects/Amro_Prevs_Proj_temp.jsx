@@ -12,11 +12,15 @@ const Amro_Previous_template = (props) => {
     <Fragment>
       <div>
         <h1>{props.projname}</h1>
+        <br></br>
         <img className="limit2" src={props.imagelink} />
+        <br></br>
         <h2>
           Team Members: <h3>{props.teammembers}</h3>
         </h2>
+        <br></br>
         <h4>{props.discribtion}</h4>
+        <br></br>
         <h4>
           <a href={props.repolink}>Link to Repository</a>
         </h4>
