@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import { Grid } from '@material-ui/core';
 import Amro_Previous_template from './Amro_Prevs_Proj_temp';
+import './Amro_Previous_styles.css';
+
 class Amro_Y3_Projects extends React.Component {
   render() {
     return (
@@ -8,7 +10,7 @@ class Amro_Y3_Projects extends React.Component {
         <Grid container>
           <Grid item sm={1} xs={0} />
           <Grid container sm={10} xs={12}>
-            <Grid item xs={12}>
+            <Grid item xs={12} className="limit2">
               <Amro_Previous_template
                 projname=" DocTech"
                 imagelink="https://raw.githubusercontent.com/kvdsouza/cfpFinalProjects2019/master/imagesGithub/docTech.png"

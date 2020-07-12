@@ -1,5 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { Grid } from '@material-ui/core';
+import './Amro_Previous_styles.css';
+
 const Amro_Previous_template = (props) => {
   const [name, setName] = useState('Amro');
   const [age, setAge] = useState('17');
@@ -9,9 +11,8 @@ const Amro_Previous_template = (props) => {
   return (
     <Fragment>
       <div>
-        <h1></h1>
         <h1>{props.projname}</h1>
-        <img src={props.imagelink} />
+        <img className="limit2" src={props.imagelink} />
         <h2>
           Team Members: <h3>{props.teammembers}</h3>
         </h2>
