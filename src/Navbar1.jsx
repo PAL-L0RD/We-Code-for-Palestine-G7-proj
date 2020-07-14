@@ -11,6 +11,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenItem from './Components/MenuItem.jsx';
+import Feed from './Components/Main-Project-Screens/Amro_Feedback/Amro_Feedback';
 
 const useStyles = makeStyles((theme) => ({
   wrapper: {
@@ -88,6 +89,9 @@ function App3() {
 
                   <MenuItem onClick={popupState.close}>
                     <MenItem name7="Amro Charts" link7="/Amro_charts" />
+                  </MenuItem>
+                  <MenuItem onClick={popupState.close}>
+                    <MenItem name7="Feed" link7="/feed" />
                   </MenuItem>
                   <MenuItem onClick={popupState.close}>
                     <MenItem thename="thetask" thelink="/State" />

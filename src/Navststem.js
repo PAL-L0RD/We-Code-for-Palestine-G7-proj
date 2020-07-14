@@ -12,6 +12,7 @@ import previous_yeras from './Components/Main-Project-Screens/Previous_Years_Pro
 import y3_projects from './Components/Main-Project-Screens/Previous_Years_Projects/Amro_Y3_project';
 import Footer1 from './Components/Main-Project-Screens/Amro_Footer/Amro_Footer';
 import Bar from './Navbar1';
+import Feed from './Components/Main-Project-Screens/Amro_Feedback/Amro_Feedback';
 
 function App2() {
   return (
@@ -28,6 +29,7 @@ function App2() {
           <Route exact path="/prev" component={previous_yeras} />
           <Route exact path="/prev/y3" component={y3_projects} />
           <Route exact path="/about-us" component={State8} />
+          <Route exact path="/feed" component={Feed} />
         </Switch>
         <Footer1 />
       </Router>
