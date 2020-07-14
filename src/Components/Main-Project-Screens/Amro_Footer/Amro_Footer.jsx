@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { Grid } from '@material-ui/core';
 import { Box } from '@material-ui/core';
 import Footeritems from './footeritems';
+import Footeritems2 from './Amro_footer2';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 import './Amro_Footer.css';
@@ -19,40 +20,39 @@ function Amro_footer() {
     <div className="main">
       <footer>
         <Divider className="divider" />
-        <Grid container direction="row" xs={12}>
-          <Grid item xs={0} sm={4}>
-            <Box display={{ xs: 'none', sm: 'block' }}>
-              <div className="image">
-                <img className="img" src={Im1} />
-              </div>
+        <Grid container direction="column">
+          <Grid className="cl" container direction="row">
+            <Grid className="logo" item xs={0} sm={4}>
+              <Box display={{ xs: 'none', sm: 'block' }}>
+                <Fragment>
+                  <img className="img" src={Im1} />
+                </Fragment>
+              </Box>
+            </Grid>
+            <Grid item sm={4} xs={12}>
+              <Box display={{ xs: 'none', sm: 'block' }}>
+                <Footeritems />
+              </Box>
+              <Box display={{ xs: 'block', sm: 'none' }}>
+                <Footeritems2 />
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Box className="mid">
+                {' '}
+                <Typography className="Sponsor" varient="h2">
+                  {'Sponser:'}
+                </Typography>
+              </Box>
+              <img className="image" src={Paltel} />
+            </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Box xs={12} className="TRADEMARK">
+              <Typography className="TRADEMARK_TEXT" varient="h2">
+                Code For Palestine™
+              </Typography>
             </Box>
-          </Grid>
-          <Grid item sm={4} xs={12}>
-            {/* <List component="nav" aria-label="footer-0" className="mid">
-              <ListItem button className="mid">
-                <Link to="/about-us"> Feedback</Link>
-              </ListItem>
-              <ListItem className="mid" button>
-                <Link to="/about-us"> Contact-us</Link>
-              </ListItem>
-              <ListItem className="mid" button>
-                <Link to="/about-us"> Admission Dates</Link>
-              </ListItem>
-              <ListItem className="mid" button>
-                <Link to="/about-us">
-                  <Typography className="footeritemas" varient="h2">
-                    Pictures and videos
-                  </Typography>
-                </Link>
-              </ListItem>
-            </List> */}
-            <Footeritems />
-          </Grid>
-          <Grid item xs={12} sm={4} className="mid">
-            <Typography className="Sponsor" varient="h2">
-              {'Sponser:'}
-            </Typography>
-            <img className="image" src={Paltel} />
           </Grid>
         </Grid>
       </footer>
@@ -60,3 +60,5 @@ function Amro_footer() {
   );
 }
 export default Amro_footer;
+// Remove sponsor
+//Add a link to Pltel Foundation and CODE X
