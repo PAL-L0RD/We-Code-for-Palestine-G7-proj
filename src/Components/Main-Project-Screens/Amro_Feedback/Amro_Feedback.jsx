@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import { Grid } from '@material-ui/core';
 import db from '../../../firebase';
+import Button from '@material-ui/core/Button';
 
 const Amro_feedback = (props) => {
   const [name, setName] = useState('');
@@ -41,7 +42,14 @@ const Amro_feedback = (props) => {
           onChange={(event) => setFeedback(event.target.value)}
           placeholder="Write your feedback here"
         />
-        <button> Submit </button>
+        <Button
+          onClick={submit}
+          variant="contained"
+          color="primary"
+          disableElevation
+        >
+          Disable elevation
+        </Button>
       </form>
       <button onClick={reset}>Click here to clear the boxes</button>
     </Fragment>

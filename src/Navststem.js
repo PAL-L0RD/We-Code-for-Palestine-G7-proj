@@ -13,6 +13,7 @@ import y3_projects from './Components/Main-Project-Screens/Previous_Years_Projec
 import Footer1 from './Components/Main-Project-Screens/Amro_Footer/Amro_Footer';
 import Bar from './Navbar1';
 import Feed from './Components/Main-Project-Screens/Amro_Feedback/Amro_Feedback';
+import Who from './Components/Main-Project-Screens/Amor_whomademe/Amro_whomade';
 
 function App2() {
   return (
@@ -30,6 +31,7 @@ function App2() {
           <Route exact path="/prev/y3" component={y3_projects} />
           <Route exact path="/about-us" component={State8} />
           <Route exact path="/feed" component={Feed} />
+          <Route exact path="/who" component={Who} />
         </Switch>
         <Footer1 />
       </Router>
